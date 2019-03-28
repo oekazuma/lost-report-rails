@@ -1,0 +1,26 @@
+<div class="ml-auto posts_button">
+  <%= link_to '投稿一覧', posts_path, class: "btn btn-outline-info" %>
+  <%= link_to '編集', edit_post_path(@post), class: "btn btn-outline-info" %>
+</div>
+</div>
+
+<div class="card">
+  <div class="card-header bg-info text-white">
+    <h4><%= @post.item %></h4>
+  </div>
+  落とし物の特徴
+  <div class="card-body">
+    <p class="card-text"><%= simple_format(@post.feature) %></p>
+  </div>
+  落とし物を見つけた場所
+  <div class="card-body">
+    <p class="card-text"><%= simple_format(@post.location) %></p>
+  </div>
+  落とし物を見つけた場所
+  <div class="card-body">
+    <p class="card-text"><%= simple_format(@post.deliver) %></p>
+  </div>
+  <div class="card-footer">
+    <p class="text-right font-weight-bold mr-10"><%= @post.name %></p>
+  </div>
+</div>
