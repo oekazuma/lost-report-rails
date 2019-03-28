@@ -7,7 +7,6 @@
 <table class="table table-bordered border-primary table-hover table-sm posts_table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col" style="width: 40px">No.</th>
       <th scope="col">落とし物</th>
       <th scope="col">落とし物を見つけた場所</th>
       <th scope="col">投稿者</th>
@@ -20,7 +19,6 @@
   <tbody>
       <% @posts.each do |post| %>
         <tr>
-            <th><%= post.id %></th>
             <td><%= post.item %></td>
             <td><%= post.location %></td>
             <td><%= post.name %></td>
